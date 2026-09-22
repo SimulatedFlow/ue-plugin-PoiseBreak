@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"EngineVersion": "5.8.0",
+	"FriendlyName": "PoiseBreak - Poise, Stagger Tiers & Hyper Armor",
+	"Description": "Whether a hit staggers should not depend on how big the hit was. It should depend on how close the target already was to breaking - that is what makes a fight feel like a fight instead of a lottery. PoiseBreak keeps a poise pool per actor and decides the break from the OVERSHOOT: the same twenty points of poise damage does nothing to a fresh enemy and knocks down one that had five left. Breaks come in tiers, each with its own stagger length and its own immunity window - and the immunity covers the stagger, because four attackers who each land a flinch must not hold an actor still forever. Hyper armor scales incoming poise damage during your attack windows without touching health damage. Poise regenerates after a delay that every hit resets, and never while the actor is staggered. Every rule is a pure function that the component and the tests both call, so what you see on the meter cannot disagree with the plugin.",
+	"Category": "Gameplay",
+	"CreatedBy": "Silvan Teufel",
+	"CreatedByURL": "https://silvan.teufel-engineering.com",
+	"DocsURL": "https://wiki.teufel-engineering.com/en/PoiseBreak/documentation",
+	"SupportURL": "mailto:teufelsilvan@gmail.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "PoiseBreak",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
